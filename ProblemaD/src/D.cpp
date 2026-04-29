@@ -6,7 +6,12 @@ using ll = long long;
 bool ok(ll target, vector<int>& cap, vector<int>& spill) {
 	ll exceso = 0;
 	for (int i = 0; i < cap.size(); ++i) {
-		if (i > 0 && exceso > 0 && exceso > spill[i-1] || exceso < 0) {
+		// El exceso acumulado (positivo o negativo) debe extenderse hacia la
+		// derecha si, siendo positivo, es rentable transferir ese exceso a la
+		// derecha usando la conexión; o siempre si es negativo (déficit),
+		// porque es necesario que fluya hacia la derecha para que todos
+		// lleguen a target.
+		if ((exceso > 0 && exceso > spill[i-1]) || (exceso < 0)) {
 			exceso -= spill[i-1];
 		} else {
 			exceso = 0;
