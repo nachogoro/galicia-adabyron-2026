@@ -24,13 +24,13 @@ puerto cuya distancia máxima al resto sea la menor posible.
 
 ## Entrada
 
-La primera línea contiene dos enteros: N (número de puertos, $1 < N \leq 10000$) y M (número de
-conexiones, $1 \leq M \leq \min\left(\frac{N(N-1)}{2},\ 250000\right)$).
+La primera línea contiene dos enteros: N (número de puertos, $1 < N \leq 10000$ ) y M (número de
+conexiones, $1 \leq M \leq \min\left(\frac{N(N-1)}{2},\ 250000\right)$ ).
 
 Las siguientes M líneas contienen tres enteros (a, b, dist) que indican una conexión bidireccional entre
-el puerto a y el puerto b con una longitud dist ($1 \leq dist \leq 1000$).
+el puerto a y el puerto b con una longitud dist ($1 \leq dist \leq 1000$ ).
 
-La siguiente línea contiene un entero K ($1 \leq K \leq \min(N, 2500)$) con el número de puertos candidatos.
+La siguiente línea contiene un entero K ($1 \leq K \leq \min(N, 2500)$ ) con el número de puertos candidatos.
 
 La última línea contiene K enteros distintos que representan los IDs de los puertos candidatos.
 
